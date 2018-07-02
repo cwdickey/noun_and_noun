@@ -1,0 +1,8 @@
+basil
+flower
+hazelnut
+herb
+thistle
+thread
+water
+wood

@@ -1,13 +1,18 @@
 #from django.shortcuts import render
 from django.http import HttpResponse
+from django.conf import settings
 import random
 from django.shortcuts import render
+import os
 
-noun_list = ['Flower', 'Water', 'Basil', 'Hazelnut', 'Thistle', 'Thread', 'Herb', 'Wood']
 and_symbol_list = [' & ', ' + ']
 
 
 def index(request):
+    noun_list = []
+    with open(os.path.join(settings.PROJECT_ROOT, 'nouns.txt'), 'r') as f:
+        noun_list = f.read().splitlines() 
+
     template = 'noun_generator/index.html'
     noun_one = random.choice(noun_list)
     same_noun = True
