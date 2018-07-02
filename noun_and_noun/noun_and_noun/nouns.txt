@@ -1,7 +1,9 @@
 basil
+bone
 flower
 hazelnut
 herb
+shank
 thistle
 thread
 water
