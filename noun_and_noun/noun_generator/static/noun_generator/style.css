@@ -1,0 +1,12 @@
+body {
+    background: white url("images/basil.jpg") no-repeat;
+    background-position: center top;
+    background-size: cover;
+    line-height: 30px;
+    font-size: 8vw;
+    color: white;
+    text-align: center;
+}
+
+/* @font-face { font-family: NounFont; src: url('Delicious-Roman.otf'); } */
+
